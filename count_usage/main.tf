@@ -20,7 +20,7 @@ resource "aws_subnet" "pubsub" {
 
 
 
-## MAKIN 
+## SIMPLY USING COUNT WITH VARIABLE
 
 resource "aws_subnet" "pubsub" {
   vpc_id            = aws_vpc.vpc.id
@@ -48,3 +48,7 @@ variable "cidr" {
 output "subnets" {
   value = aws_subnet.pubsub[*].id
 }
+
+
+
+
