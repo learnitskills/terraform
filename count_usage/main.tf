@@ -48,7 +48,3 @@ variable "cidr" {
 output "subnets" {
   value = aws_subnet.pubsub[*].id
 }
-
-
-
-
